@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/articleBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:tint="@color/black"
+            android:src="@drawable/back" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved"
+            android:textColor="#94C77D"
+            android:fontFamily="@font/sourcesanspro_semibold"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textSize="24sp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_icon"
+            android:paddingStart="15dp"
+            android:visibility="gone"
+            android:layout_marginStart="15dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/savedArticles"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_save"
+            android:src="@drawable/saved_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_marginEnd="15dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:focusableInTouchMode="true">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search"
+        android:theme="@style/AppSearchView"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:queryBackground="@android:color/transparent"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search"
+        app:searchIcon="@drawable/search_icon"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#E8E8F7"/>
+
+</LinearLayout>
